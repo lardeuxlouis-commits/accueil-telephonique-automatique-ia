@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent IA au téléphone : horaires, pause et fermeture</title>
+<meta name="description" content="Gérer horaires, pause déjeuner et fermeture exceptionnelle avec un agent téléphonique IA : pourquoi l'IA n'a pas d'horloge, et la marche à suivre.">
+<link rel="canonical" href="https://accueil-telephonique-automatique-ia.fr/horaires-pause-midi-fermeture/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Agent IA au téléphone : horaires, pause et fermeture">
+<meta property="og:description" content="Gérer horaires, pause déjeuner et fermeture exceptionnelle avec un agent téléphonique IA : pourquoi l'IA n'a pas d'horloge, et la marche à suivre.">
+<meta property="og:url" content="https://accueil-telephonique-automatique-ia.fr/horaires-pause-midi-fermeture/">
+<meta name="twitter:card" content="summary">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://accueil-telephonique-automatique-ia.fr/"}, {"@type": "ListItem", "position": 2, "name": "Horaires et fermetures", "item": "https://accueil-telephonique-automatique-ia.fr/horaires-pause-midi-fermeture/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Pourquoi l'IA ne peut-elle pas savoir l'heure toute seule ?", "acceptedAnswer": {"@type": "Answer", "text": "Un modèle de langage n'a pas d'horloge. Lui demander « sommes-nous ouverts ? » l'oblige à deviner. Le bon réglage calcule l'état côté serveur (ouvert, pause, fermé) et le lui donne comme information."}}, {"@type": "Question", "name": "Comment changer l'accueil pour une journée de fermeture ?", "acceptedAnswer": {"@type": "Answer", "text": "Remplacez la phrase d'accueil par la version « fermeture exceptionnelle », ajoutez au besoin une règle interdisant les transferts, puis remettez la phrase habituelle le lendemain. Gardez l'ancienne phrase en fichier."}}, {"@type": "Question", "name": "Que vérifier après avoir changé la phrase d'accueil ?", "acceptedAnswer": {"@type": "Answer", "text": "Passez un appel de test et contrôlez que le compte rendu part bien vers la bonne personne. Un changement fait parfois sauter un réglage annexe, comme un webhook ou une extraction."}}]}]}</script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="a-top"><div class="a-wrap">
+ <a class="a-brand" href="/">Accueil téléphonique <span>automatique IA</span></a>
+ <nav aria-label="Navigation"><a href="/phrase-d-accueil-ia/">Phrase d'accueil</a><a href="/horaires-pause-midi-fermeture/">Horaires et fermetures</a></nav>
+</div></header>
+<main>
+<div class="a-wrap">
+ <div class="a-crumbs" aria-label="Fil d'Ariane"><a href="/">Accueil</a><span>›</span>Horaires et fermetures</div>
+ <div class="a-pagehead">
+  <div class="a-eyebrow">Guide de réglage, mis à jour le 4 octobre 2026</div>
+  <h1>Horaires, pause déjeuner, fermeture exceptionnelle : ce que l'IA doit savoir</h1>
+  <p class="a-lead">Un agent IA ne sait pas quelle heure il est. Pour qu'il annonce la bonne chose à midi, le soir ou le jour d'un séminaire, l'information doit lui être donnée, pas demandée.</p>
+ </div>
+ 
+<section>
+ <h2>L'IA n'a pas d'horloge</h2>
+ <p>C'est la source d'erreur la plus fréquente : on écrit dans les consignes « nous sommes fermés entre 12 h et 14 h » et l'IA applique la règle à n'importe quelle heure, ou l'oublie. Elle n'a aucun moyen de savoir quelle heure il est.</p>
+ <p>La bonne méthode : <strong>calculer l'état de l'entreprise en dehors de l'IA</strong> (ouvert, pause, fermé, congé) et le lui transmettre comme une information déjà établie. L'IA n'a plus à deviner, elle adapte seulement sa réponse.</p>
+ <div class="a-tablewrap"><table>
+  <tr><th>État</th><th>Ce que dit l'IA</th><th>Ce qu'elle fait</th></tr>
+  <tr><td>Ouvert, ligne occupée</td><td>Elle prend le relais</td><td>Oriente ou prend un message</td></tr>
+  <tr><td>Pause</td><td>Indique l'heure de retour</td><td>Prend un message, pas de transfert</td></tr>
+  <tr><td>Fermé</td><td>Indique la réouverture</td><td>Prend un message complet</td></tr>
+  <tr><td>Fermeture exceptionnelle</td><td>Explique le motif et le jour de traitement</td><td>Prend un message, aucun rappel immédiat</td></tr>
+ </table></div>
+</section>
+<section>
+ <h2>Gérer une fermeture exceptionnelle</h2>
+ <p>Cas réel : un cabinet comptable doit fermer une journée pour son séminaire annuel et veut que les appelants laissent un message traité le lendemain. La marche à suivre :</p>
+ <ol class="a-qa">
+  <li><h3>Sauvegarder la phrase habituelle</h3><p>Copiez-la dans un fichier avant de la modifier. Vous en aurez besoin pour le retour à la normale.</p></li>
+  <li><h3>Remplacer la phrase d'accueil</h3><p>Utilisez le modèle « fermeture exceptionnelle » : motif, jour de traitement, invitation à laisser un message.</p></li>
+  <li><h3>Interdire les promesses contraires</h3><p>Ajoutez une règle : pas de transfert aujourd'hui, pas de rappel avant le jour indiqué.</p></li>
+  <li><h3>Tester l'acheminement des comptes rendus</h3><p>Passez un appel de test et vérifiez que le résumé arrive bien chez la bonne personne.</p></li>
+  <li><h3>Remettre la phrase habituelle</h3><p>Le lendemain, replacez l'ancienne phrase et retirez la règle temporaire, puis refaites le même test.</p></li>
+ </ol>
+</section>
+<section>
+ <h2>Le piège du changement de dernière minute</h2>
+ <div class="a-warn">Modifier la phrase d'accueil d'un agent déjà en service peut, selon la plateforme, recréer l'agent et faire perdre un réglage annexe : le webhook qui envoie les comptes rendus, ou un champ d'extraction. Le jour où il y a le plus de messages à traiter, c'est celui où il faut le plus vérifier que tout arrive.</div>
+</section>
+
+<section>
+ <h2>Ce que l'IA ne doit pas dire un jour de fermeture</h2>
+ <ul class="a-clean">
+  <li><strong>« Je vous passe quelqu'un »</strong> : personne n'est là pour décrocher.</li>
+  <li><strong>« On vous rappelle tout de suite »</strong> : le rappel n'aura lieu que le jour indiqué.</li>
+  <li><strong>« Nous sommes ouverts jusqu'à 18 h »</strong> : une règle d'horaires appliquée sans savoir que ce jour est exceptionnel.</li>
+ </ul>
+ <p>La parade : une règle explicite pour la journée concernée, retirée le lendemain, et un appel de test pour vérifier ce que l'agent dit vraiment.</p>
+</section>
+
+ <section id="questions"><h2>Questions fréquentes</h2><details><summary>Pourquoi l'IA ne peut-elle pas savoir l'heure toute seule ?</summary><p>Un modèle de langage n'a pas d'horloge. Lui demander « sommes-nous ouverts ? » l'oblige à deviner. Le bon réglage calcule l'état côté serveur (ouvert, pause, fermé) et le lui donne comme information.</p></details><details><summary>Comment changer l'accueil pour une journée de fermeture ?</summary><p>Remplacez la phrase d'accueil par la version « fermeture exceptionnelle », ajoutez au besoin une règle interdisant les transferts, puis remettez la phrase habituelle le lendemain. Gardez l'ancienne phrase en fichier.</p></details><details><summary>Que vérifier après avoir changé la phrase d'accueil ?</summary><p>Passez un appel de test et contrôlez que le compte rendu part bien vers la bonne personne. Un changement fait parfois sauter un réglage annexe, comme un webhook ou une extraction.</p></details></section>
+ <section><div class="a-cta"><h2>Voir comment un agent gère ses horaires</h2><p>Appelez un agent à différentes heures. Eliocall permet de tester avant de s'engager.</p><a class="a-btn" href="https://eliocall.com/?utm_source=accueil-telephonique-automatique-ia&amp;utm_medium=guide&amp;utm_campaign=accueil-horaires" rel="nofollow sponsored noopener">Tester un agent vocal</a></div></section>
+</div>
+</main>
+<footer><div class="a-wrap">
+ <div>Contenu rédigé par Louis Lardeux, qui édite aussi Eliocall. Révisé le 4 octobre 2026.</div>
+ <div><a href="/mentions-legales/">Mentions légales</a></div>
+</div></footer>
+</body>
+</html>

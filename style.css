@@ -474,6 +474,17 @@ a[data-card][data-seen]::after{content:"Déjà lu";position:absolute;top:14px;ri
 @media (max-width:560px){#rs-toast{left:12px;right:12px;max-width:none;bottom:76px}}
 @media (prefers-reduced-motion:reduce){#rs-toast{transition:none}}
 
+.a-mdl{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:12px 0;background:var(--bg);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 14px;align-items:start}
+.a-mdl p{margin:0}
+.a-mdlh{font-weight:700;grid-column:1/-1}
+.a-mdlt{color:var(--ink)}
+.a-mdlb{font:inherit;font-size:.86em;font-weight:600;border:1px solid var(--accent);color:var(--accent-deep);background:var(--accent-soft);border-radius:8px;padding:6px 12px;cursor:pointer;min-height:36px;align-self:center}
+.a-mdlb:hover{background:var(--accent);color:var(--on-accent)}
+.a-mdlp{display:block}
+.a-mdlr{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 14px;align-items:start;margin-top:10px}
+.a-mdll{display:block;font-size:.78em;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--accent-deep);margin-bottom:2px}
+@media (max-width:560px){.a-mdl,.a-mdlr{grid-template-columns:minmax(0,1fr)}.a-mdlb{justify-self:start}}
+
 .a-btn{border-radius:999px}
 .a-kicker{display:inline-block;background:var(--accent-soft);padding:5px 12px;border-radius:999px}
 .a-doc h2::after{content:"";display:block;width:46px;height:4px;border-radius:4px;background:var(--accent-soft);margin-top:10px}
